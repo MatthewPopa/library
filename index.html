@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="display">
+            <div class="carousel">
+            </div>
+            <h1 class="title">The Chronicles of Narnia</h1>
+            <h2 class="subtitle">By C.S. Lewis - 768 pages. Haven't read.</h2>
+        </div>
+        <hr>
+        <form id="form" action="">
+            <h3>Submit a book</h3>
+            <div class="input-wrapper">
+                <input type="text" name="title" id="title" placeholder="" value="Test Title" required>
+                <label for="title">Title</label>
+            </div>
+            <div class="input-wrapper">
+                <input type="text" name="author" id="author" placeholder="" value="Test Author" required>
+                <label for="author">Author</label>
+            </div>
+            <div class="form-row">
+                <div class="input-wrapper pages">
+                    <label for="pages">Pages</label>
+                    <input type="number" name="pages" id="pages" value="123" required>
+                </div>
+                <div class="color-selection">
+                    <div>
+                        <label for="bg">Spine Color</label>
+                        <input type="color" name="bg" id="bg" value="#000000">
+                    </div>
+                    <div>
+                        <label for="color">Text Color</label>
+                        <input type="color" name="color" id="color" value="#ffffff">
+                    </div>
+                </div>
+            </div>
+            <div class="file-row">
+                <div class="thumbnail"><img src="placeholder.svg" alt=""></div>
+                <label for="cover">Book cover</label>
+                <input type="file" name="cover" id="cover" accept="image/png, image/jpeg"/>
+            </div>
+            <div class="check-row">
+                <input type="checkbox" name="read" id="read">
+                <label for="read">Read the book?</label>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
