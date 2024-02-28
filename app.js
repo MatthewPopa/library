@@ -34,6 +34,7 @@ const carousel = document.querySelector('.carousel');
 const title = document.querySelector('.title');
 const subtitle = document.querySelector('.subtitle');
 let newImg = new Image();
+newImg.src = 'placeholder.svg';
 
 form.addEventListener("submit", addBookToLibrary, true);
 carousel.addEventListener("click", (e) => {
